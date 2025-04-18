@@ -1,0 +1,19 @@
+{
+  "name": "virtual-girlfriend-app",
+  "version": "1.0.0",
+  "description": "Combined frontend and backend for the virtual girlfriend app",
+  "scripts": {
+    "start": "cd backend && yarn start",
+    "dev": "concurrently \"cd backend && yarn dev\" \"cd frontend && yarn dev\"",
+    "build": "cd frontend && yarn build",
+    "lint": "cd frontend && yarn lint && cd backend && yarn lint"
+  },
+  "private": true,
+  "dependencies": {
+    "vite": "^6.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.0",
+    "concurrently": "^9.1.2"
+  }
+}
